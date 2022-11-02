@@ -269,7 +269,7 @@ class Money implements ModelInterface, ArrayAccess
      *
      * @return void
      */
-    public function offsetSet($offset, $value):mixed
+    public function offsetSet($offset, $value): void
     {
         if (is_null($offset)) {
             $this->container[] = $value;
